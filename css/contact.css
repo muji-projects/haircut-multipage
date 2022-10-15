@@ -1,0 +1,48 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --darkgray: #191c24;
+    --red: #eb1616;
+    --light-gray: rgb(117, 121, 126);
+}
+
+.contact-us input,
+textarea {
+    outline: none;
+    border: none;
+    background: none;
+    width: 100%;
+    height: 100%;
+    color: var(--light-gray);
+    display: block;
+}
+
+.contact-us .name-and-mail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-us .name-and-mail>* {
+    width: 48%;
+}
+
+.form-elem {
+    border: 1px solid var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+}
+
+.form-elem input::placeholder {
+    font-size: 1rem;
+}
+
+.form-elem textarea::placeholder {
+    font-size: 1rem;
+}
+
+.form-elem.input {
+    height: 2.5rem;
+}

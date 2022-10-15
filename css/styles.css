@@ -87,7 +87,7 @@ nav ul li.appointment button {
 /*Carousel*/
 
 .carousel {
-    width: 100vw;
+    /* width: 100%; */
     height: 700px;
 }
 
@@ -284,11 +284,15 @@ h3 {
 }
 
 .image-with-content .text-section-container {
-    /* flex-grow: 1; */
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    flex: 3;
+}
+
+.image-with-content .image-section {
+    flex: 4;
 }
 
 
@@ -317,11 +321,12 @@ h3 {
 
 .image-with-content .image-section img {
     width: 100%;
+    height: 100%;
 }
 
 .barbers {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: center;
 }
 
@@ -351,16 +356,37 @@ h3 {
 }
 
 footer {
+    background-color: var(--darkgray);
+    color: var(--light-gray);
+    font-size: 0.8rem;
+}
+
+.footer-info {
     display: flex;
     justify-content: space-evenly;
-    background-color: var(--darkgray);
     padding-top: 5rem;
+    margin-bottom: 2.5rem;
+}
+
+footer .get-in-touch .contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
 }
 
 footer i {
+    text-align: center !important;
+}
+
+
+footer .get-in-touch .contact-info .icon {
+    display: flex;
+    margin-right: 1rem;
     background-color: var(--black);
-    padding: 0.5rem;
-    width: 2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    align-items: center;
+    justify-content: center;
 }
 
 footer h3 {
@@ -368,7 +394,7 @@ footer h3 {
 }
 
 footer p {
-    padding: 0.6rem 0;
+    padding: 0.4rem 0;
 }
 
 footer ul li {
@@ -380,24 +406,55 @@ footer .newsletter .input {
     padding: 0.5rem;
     display: flex;
     font-size: 1.1rem;
+    width: 350px;
+    margin-bottom: 1rem;
 }
 
 footer .newsletter input {
     border: none;
     outline: none;
     background: none;
-    flex-grow: 3;
+    flex: 3;
 }
 
 footer .newsletter button {
     background-color: var(--red);
     border: none;
     height: 2rem;
-    flex-grow: 1;
+    flex: 1;
     color: white;
     width: 80px;
 }
 
-input:active {
-    border: none;
+footer .newsletter button:hover {
+    cursor: pointer;
+}
+
+footer .newsletter .social__links {
+    display: flex;
+    gap: 0.5rem;
+}
+
+footer .newsletter .social__links .link {
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+}
+
+footer .newsletter .social__links i {
+    display: block;
+}
+
+footer .copyright {
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    padding: 0 2rem;
 }
