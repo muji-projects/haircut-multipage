@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,100;1,300&display=swap');
+
+html {
+    --black: #000;
+    --white: #fff;
+    --darkgray: #191c24;
+    --red: #eb1616;
+    --light-gray: rgb(117, 121, 126);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*BARRE DE NAVIGATION*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 20px 30px;
+    background-color: var(--darkgray);
+}
+
+.navbar .links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 5;
+    gap: 1rem;
+}
+
+/* Section Logo*/
+.navbar .logo {
+    flex-grow: 1;
+}
+
+/* Section Links*/
+.navbar .links a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+#pg {
+    background: none;
+    color: var(--white);
+    border: none;
+    text-align: center;
+    font-size: medium;
+}
+
+.navbar .links a:first-child {
+    color: var(--red);
+}
+
+/* Section Links*/
+.navbar .appointment {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.navbar .appointment button {
+    background-color: #eb1616;
+    color: var(--white);
+    padding: 10px 20px 10px 10px;
+    border: none;
+}
+
+
+/*CAROUSEL*/
+.container-fluid {
+    width: 100%;
+    background-color: var(--black);
+}
+
+.carousel {
+    width: 100vw;
+    height: 700px;
+}
+
+.carousel__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/carousel-1.jpg");
+    height: 100%;
+}
+
+.carousel__img .text__title {
+    font-size: 3rem;
+}
+
+
+/* CONTAINER */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.border {
+    border: 1px solid red;
+}
+
+.d-flex {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+i {
+    color: var(--red);
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.o-auto {
+    margin: 0 auto;
+}
+
+
+/* ABOUT US */
+.aboutus {
+    display: flex;
+    padding-top: 3rem;
+    width: 100%;
+}
+
+.aboutus .about-image {
+    flex-grow: 5;
+}
+
+.aboutus .about-text {
+    flex-grow: 6;
+    padding: 0 1.5rem;
+}
+
+.aboutus .about-image img {
+    width: 100%;
+}
+
+.about-text,
+h1,
+h2,
+h3 {
+    color: var(--white);
+}
+
+#about {
+    color: var(--red);
+    padding: 5px;
+    background: #191c24;
+    width: 6rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.about-text p {
+    color: var(--light-gray);
+    padding: 5px 0;
+    margin-bottom: 1rem;
+}
+
+.sc {
+    display: flex;
+}
+
+#about {
+    color: var(--red);
+    background-color: #191c24;
+}
+
+
+ /* WHAT WE PROVIDE */
+.provide #services {
+    width: 6rem;
+    margin: 1rem auto;
+}
+
+
+/* SERVICES*/
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.services .services-from {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    width: 30%;
+}
+
+.services-from__img {
+    width: 35%;
+}
+
+.services-from__img img {
+    width: 100%;
+}
+
+.services-from__text {
+    /* width: 75%; */
+    padding: 0rem 1rem;
+}
+
+.services-from .services-from__text>* {
+    margin-bottom: 1rem;
+}
+
+.services-from__text p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    color: var(--light-gray);
+    /* font-family: Helvetica, sans-serif; */
+}
+
+
+/* .aboutus {
+    padding-top: 3rem;
+    width: 100%;
+}
+
+.about-text h2,
+h3 {
+    color: var(--white);
+}
+
+#about {
+    color: var(--red);
+    padding: 5px;
+    background: #191c24;
+
+} */
+
+/* provide */
+/* .provide {
+    margin-top: 3rem;
+}
+
+#services {
+    color: var(--red);
+    text-align: center;
+    padding-top: 3rem;
+    padding: 5px;
+    background: #191c24;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* PROVID */
+.provide {
+    margin-top: 3rem;
+    padding-top: 3rem;
+}
+
+#services {
+    color: var(--red);
+    text-align: center;
+    padding-top: 3rem;
+    padding: 5px;
+    background: #191c24;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#provide {
+    text-align: center;
+    padding-bottom: 1rem;
+    color: var(--white);
+}
+
+/* SERVICES */
+.services-from {
+    background-color: var(--darkgray);
+}
+
+#from {
+    color: var(--red);
+}
+
+
+/* PRICE & PLAN */
+.price{
+    background-color: var(--darkgray);
+    margin-top: 5rem;
+}
+
+.price-text{
+    width: 50%;
+}
+
+.pp {
+   color: var(--red);
+   background-color: var(--black);
+   padding: 5px;
+   margin-bottom: 1rem;
+}
+
+.price-image {
+    width: 90%;
+}
+
+.price-image img {
+    width: 100%;
+}
+
+
+/* BAEBER */
+.team-pics img{
+    width: 100%;
+    text-align: center;
+}
+
+.team-pics{
+    text-align: center;
+}
+
+.team-pics p {
+    color: var(--red);
+    padding: 1rem;
+}
+
+#bn-head {
+    padding: 1rem 0 0 0;
+}
+
+#barber-name{
+    background-color: var(--darkgray);
+}
+
+/* WORKING HOURS */
+
+.working-hours {
+    background: var(--darkgray);
+    margin-top: 5rem;
+}
+
+#wh-p {
+    background: var(--black);
+    color: var(--red);
+    padding: 5px;
+}

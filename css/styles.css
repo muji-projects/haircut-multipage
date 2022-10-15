@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,100;1,300&display=swap');
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --darkgray: #191c24;
+    --red: #eb1616;
+    --light-gray: rgb(117, 121, 126);
+}
+
+html {
+    background-color: var(--black);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--white);
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+/*Barre de navigation*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--darkgray);
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 5;
+    gap: 1rem;
+    font-weight: bold;
+}
+
+header nav ul li select {
+    font-weight: bold;
+}
+
+
+/* Section Links*/
+header nav a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+#pg {
+    background: none;
+    color: var(--white);
+    border: none;
+    text-align: center;
+    font-size: medium;
+}
+
+/* Section Links*/
+nav ul li.appointment {
+    text-align: center;
+}
+
+nav ul li.appointment button {
+    background-color: #eb1616;
+    color: var(--white);
+    padding: 10px 20px 10px 10px;
+    border: none;
+}
+
+/*Carousel*/
+
+.carousel {
+    width: 100vw;
+    height: 700px;
+}
+
+.carousel__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/carousel-1.jpg");
+    height: 100%;
+}
+
+.carousel__img .text__title {
+    font-size: 3rem;
+}
+
+/* container */
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.border {
+    border: 1px solid red;
+}
+
+.d-flex {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+i {
+    color: var(--red);
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.o-auto {
+    margin: 0 auto;
+}
+
+/* About us */
+.aboutus {
+    display: flex;
+    padding-top: 3rem;
+}
+
+.aboutus .about-text {
+    padding: 0 1.5rem;
+    width: 70%;
+}
+
+.aboutus .about-us-text {
+    width: 100%;
+}
+
+.aboutus .about-image h1 {
+    background-color: var(--darkgray);
+    padding: 2.5rem 1rem;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    width: 50%;
+}
+
+.aboutus .about-image {
+    position: relative;
+    width: 50%;
+}
+
+.aboutus .about-image img {
+    width: 80%;
+    position: absolute;
+    display: block;
+    right: 0px;
+}
+
+.aboutus .about-image img::before {
+    content: "25 Years Experience";
+    color: red;
+}
+
+.about-text-p {
+    color: var(--light-gray);
+    padding: 5px 0;
+    margin-bottom: 1rem;
+}
+
+.sc {
+    display: flex;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#services {
+    margin: 1rem auto;
+}
+
+.services .services-from {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    width: 32%;
+}
+
+.services-from__img {
+    width: 35%;
+}
+
+.services-from__img img {
+    width: 100%;
+    background-color: var(--black);
+}
+
+.services-from__text {
+    /* width: 75%; */
+    padding: 0rem 1rem;
+}
+
+.services-from .services-from__text>* {
+    margin-bottom: 1rem;
+}
+
+.services-from__text p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    color: var(--light-gray);
+    /* font-family: Helvetica, sans-serif; */
+}
+
+.service {
+    color: var(--red);
+    background-color: #191c24;
+}
+
+.aboutus {
+    padding-top: 3rem;
+    width: 100%;
+}
+
+.about-text h2,
+h3 {
+    color: var(--white);
+}
+
+/* provide */
+.provide {
+    margin-top: 3rem;
+}
+
+.section__title {
+    color: var(--red);
+    padding-top: 3rem;
+    padding: 5px;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    background: var(--darkgray);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#provide {
+    text-align: center;
+    padding-bottom: 1rem;
+    color: var(--white);
+}
+
+/* Services */
+.services-from {
+    background-color: var(--darkgray);
+}
+
+#from {
+    color: var(--red);
+}
+
+.image-with-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darkgray);
+}
+
+.image-with-content .text-section-container {
+    /* flex-grow: 1; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+
+.image-with-content .text-section li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--light-gray);
+    padding: 0.5rem 0;
+}
+
+.image-with-content .text-section li p {
+    color: var(--red);
+}
+
+.image-with-content.working-hours .text-section li p {
+    color: var(--white);
+}
+
+.image-with-content .text-section li:last-child {
+    border: none;
+}
+
+.image-with-content .text-section #price-and-plan {
+    background-color: var(--black);
+}
+
+.image-with-content .image-section img {
+    width: 100%;
+}
+
+.barbers {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.barber {
+    background-color: var(--darkgray);
+    width: 23%;
+}
+
+.barber .barber-text {
+    padding: 1rem;
+}
+
+.barber img {
+    width: 100%;
+}
+
+.testimonial {
+    width: 50%;
+}
+
+.testimonial h3 {
+    margin-bottom: 1rem;
+}
+
+.testimonial p {
+    margin-bottom: 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--darkgray);
+    padding-top: 5rem;
+}
+
+footer i {
+    background-color: var(--black);
+    padding: 0.5rem;
+    width: 2rem;
+}
+
+footer h3 {
+    margin-bottom: 2rem;
+}
+
+footer p {
+    padding: 0.6rem 0;
+}
+
+footer ul li {
+    padding: 0.25rem 0;
+}
+
+footer .newsletter .input {
+    background-color: white;
+    padding: 0.5rem;
+    display: flex;
+    font-size: 1.1rem;
+}
+
+footer .newsletter input {
+    border: none;
+    outline: none;
+    background: none;
+    flex-grow: 3;
+}
+
+footer .newsletter button {
+    background-color: var(--red);
+    border: none;
+    height: 2rem;
+    flex-grow: 1;
+    color: white;
+    width: 80px;
+}
+
+input:active {
+    border: none;
+}
