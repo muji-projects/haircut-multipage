@@ -19,12 +19,11 @@ header nav ul {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-grow: 5;
     gap: 1rem;
     font-weight: bold;
 }
 
-header nav ul .appointment button {
+header nav ul button {
     font-size: 1rem;
 }
 
@@ -53,76 +52,62 @@ nav ul li.appointment button {
 }
 
 
-/* Navbar container */
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial;
+nav {
+    --display: none;
 }
 
-/* Links inside the navbar */
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul a {
     text-decoration: none;
+    color: inherit;
 }
 
-/* The dropdown container */
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
+nav ul li {
     color: white;
-    padding: 14px 16px;
+}
+
+nav ul li.dropdown {
+    width: 6rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li.dropdown .dropbtn {
     background-color: inherit;
-    font-family: inherit;
-    /* Important for vertical align on mobile phones */
-    margin: 0;
-    /* Important for vertical align on mobile phones */
 }
 
-/* Add a red background color to navbar links on hover */
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-    background-color: red;
+nav ul li.dropdown ul.dropdown-list {
+    padding: 1rem;
 }
 
-/* Dropdown content (hidden by default) */
-.dropdown-content {
+nav ul li.dropdown ul.dropdown-list li {
+    display: block;
+    padding-bottom: 0.5rem;
+}
+
+nav ul li.dropdown:hover {
+    --display: block;
+}
+
+nav ul.dropdown-list {
+    /* position: relative; */
+    background-color: var(--darkgray);
+    display: var(--display);
     width: 100%;
-    display: none;
+}
+
+nav ul.dropdown-list {
     position: absolute;
-    background-color: #f9f9f9;
-    /* min-width: 160px; */
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    top: 100%;
+    padding: 0;
     z-index: 1;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
+nav ul li {
+    list-style: none;
 }
