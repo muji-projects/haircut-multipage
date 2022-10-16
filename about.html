@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/about.css">
     <title>About</title>
 </head>
@@ -18,18 +20,26 @@
 
         <nav>
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html" class="red">ABOUT</a></li>
+                <li><a href="index.html">MAISON</a></li>
+                <li><a href="about.html" class="red">&Agrave; PROPOS DE</a></li>
                 <li><a href="service.html">SERVICE</a></li>
-                <li>
-                    <select name="" id="pg" title="navbar select">
-                        <option value="">PAGE</option>
-                        <option value="">Next</option>
-                    </select>
+                <li class="dropdown">
+                    <button class="dropbtn">
+                        PAGES
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="priceandplan.html">PLANS</a>
+                        <a href="ourbarbers.html">BARBERS</a>
+                        <a href="workinghours.html">HOURS</a>
+
+                    </div>
                 </li>
                 <li><a href="contact.html">CONTACT</a></li>
                 <li class="appointment">
-                    <button type="button">Appointment &#8594;</button>
+                    <button type="button">Rendez-vous
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    </button>
                 </li>
             </ul>
         </nav>
@@ -37,6 +47,7 @@
     </header>
 
     <section class="head">
+        <div class="head-blur-layer"></div>
         <div class="head-text">
             <h1>A PROPOS DE</h1>
             <p>MAISON / PAGES / <span class="red">A PROPOS DE</span></p>
@@ -44,37 +55,42 @@
     </section>
 
     <main>
-        <!-- About US-->
         <section class="aboutus">
             <div class="about-image">
                 <h1>
-                    <span class="red">25 YEARS</span> <br> EXPERIENCE
+                    <span class="red">25 ANS</span> <br> VIVRE
                 </h1>
                 <img src="img/about.jpg" alt="image">
             </div>
 
             <div class="about-text">
-                <p id="about" class="section__title">About Us</p>
+                <p id="about" class="section__title">&Agrave; propos de nous</p>
                 <div class="about-us-text">
-                    <h1>MORE THEN JUST A HAIRCUT. LEARN MORE ABOUT US!</h1>
-                    <p class="about-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ab
-                        quibusdam distinctio
-                        magnam non cumque adipisci quisquam vero, quis debitis rerum similique</p>
-                    <p class="about-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ab
-                        quibusdam distinctio
-                        magnam non cumque adipisci quisquam vero</p>
+                    <h1>PLUS QU'UNE SIMPLE COUPE DE CHEVEUX. EN SAVOIR PLUS SUR NOUS!</h1>
+                    <p class="about-text-p">
+                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum assis. Aliqu
+                        diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita
+                        duo justo magna dolore erat amet.
+                    </p>
+                    <p class="about-text-p">
+                        Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebumamet diam
+                        ipsum.
+                        Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.
+                    </p>
                     <div class="sc">
                         <div class="since">
-                            <h2>SINCE 1990</h2>
-                            <P class="about-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Excepturi ab quibusdam
-                                distinctio</P>
+                            <h2>DEPUIS 1990</h2>
+                            <P class="about-text-p">
+                                Tempor erat elitr rebum at clita. Diam dolor diam ipsum assis.
+                                Aliqu diam amet diam et eos.
+                            </P>
                         </div>
                         <div class="client">
                             <h2>1000+ CLIENTS</h2>
-                            <P class="about-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Excepturi ab quibusdam
-                                distinctio</P>
+                            <p class="about-text-p">
+                                Tempor erat elitr rebum at clita. Diam dolor diam ipsum assis.
+                                Aliqu diam amet diam et eos.
+                            </p>
                         </div>
 
                     </div>
@@ -82,11 +98,12 @@
             </div>
         </section>
 
+
         <section class="our-barbers">
             <p class="section__title center">
-                Our Barbers
+                Notre barbier
             </p>
-            <h1 class="center">MEET OUR BARBER</h1>
+            <h1 class="center">RENCONTREZ NOTRE BARBIER</h1>
 
             <div class="barbers">
                 <div class="barber">
@@ -95,7 +112,7 @@
                     </div>
                     <div class="barber-text">
                         <h3>NOM DU BARBIER</h3>
-                        <p class="red">La designation</p>
+                        <p class="red">La d&eacute;signation</p>
                     </div>
                 </div>
                 <div class="barber">
@@ -104,7 +121,7 @@
                     </div>
                     <div class="barber-text">
                         <h3>NOM DU BARBIER</h3>
-                        <p class="red">La designation</p>
+                        <p class="red">La d&eacute;signation</p>
                     </div>
                 </div>
                 <div class="barber">
@@ -113,7 +130,7 @@
                     </div>
                     <div class="barber-text">
                         <h3>NOM DU BARBIER</h3>
-                        <p class="red">La designation</p>
+                        <p class="red">La d&eacute;signation</p>
                     </div>
                 </div>
                 <div class="barber">
@@ -122,29 +139,32 @@
                     </div>
                     <div class="barber-text">
                         <h3>NOM DU BARBIER</h3>
-                        <p class="red">La designation</p>
+                        <p class="red">La d&eacute;signation</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
     <footer>
         <div class="footer-info">
 
             <div class="get-in-touch">
-                <h3>GET IN TOUCH</h3>
+                <h3>ENTRER EN CONTACT</h3>
                 <div class="contact-info">
                     <div class="icon">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                     </div>
-                    <p>123 Street, New York, USA</p>
+                    <p>123 Street, New York, &Eacute;tats-Unis</p>
                 </div>
                 <div class="contact-info">
                     <div class="icon">
                         <i class="fa fa-phone" aria-hidden="true"></i>
                     </div>
                     <p>
-                        +012 345 67890
+                        <a href="tel:+012-345-67890">
+                            +012 345 67890
+                        </a>
                     </p>
                 </div>
                 <div class="contact-info">
@@ -152,25 +172,27 @@
                         <i class="fa fa-envelope-open" aria-hidden="true"></i>
                     </div>
                     <p>
-                        info@example.com
+                        <a href="mailto:info@example.com">
+                            info@example.com
+                        </a>
                     </p>
                 </div>
             </div>
             <div class="quick-links">
-                <h3>QUICK LINKS</h3>
+                <h3>LIENS RAPIDES</h3>
                 <ul>
-                    <li>> About Us</li>
-                    <li>> Contact Us</li>
-                    <li>> Our Services</li>
-                    <li>> Terms & Condition</li>
-                    <li>> Support</li>
+                    <li>> &Agrave; Propos De Nous</li>
+                    <li>> Nous Contacter</li>
+                    <li>> Nos Services</li>
+                    <li>> Termes Et Conditions</li>
+                    <li>> Soutien</li>
                 </ul>
             </div>
             <div class="newsletter">
-                <h3>NEWSLETTER</h3>
+                <h3>BULLETIN</h3>
                 <div class="input">
-                    <input type="text" placeholder="Your email">
-                    <button>SignUp</button>
+                    <input type="text" placeholder="Votre e-mail">
+                    <button>S'inscrire</button>
                 </div>
                 <div class="social__links">
                     <div class="link">
@@ -189,8 +211,8 @@
             </div>
         </div>
         <div class="copyright">
-            <p>&#169; <u>Your site name</u>. All Right Reserved.</p>
-            <p>Designed by <u>HTML Codex</u></p>
+            <p>&#169; Le <u>nom de votre site</u>. tous droits r&eacute;serv&eacute;s.</p>
+            <p>Con&ccedil;u par <u>le codex HTML</u></p>
         </div>
     </footer>
 

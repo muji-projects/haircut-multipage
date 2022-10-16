@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/about.css">
     <title>About</title>
 </head>
@@ -18,18 +20,26 @@
 
         <nav>
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="index.html">MAISON</a></li>
+                <li><a href="about.html">&Agrave; PROPOS DE</a></li>
                 <li><a href="service.html" class="red">SERVICE</a></li>
-                <li>
-                    <select name="" id="pg" title="navbar select">
-                        <option value="">PAGE</option>
-                        <option value="">Next</option>
-                    </select>
+                <li class="dropdown">
+                    <button class="dropbtn">
+                        PAGES
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="priceandplan.html">PLANS</a>
+                        <a href="ourbarbers.html">BARBERS</a>
+                        <a href="workinghours.html">HOURS</a>
+
+                    </div>
                 </li>
                 <li><a href="contact.html">CONTACT</a></li>
                 <li class="appointment">
-                    <button type="button">Appointment &#8594;</button>
+                    <button type="button">Rendez-vous
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    </button>
                 </li>
             </ul>
         </nav>
@@ -37,6 +47,7 @@
     </header>
 
     <section class="head">
+        <div class="head-blur-layer"></div>
         <div class="head-text">
             <h1>SERVICE</h1>
             <p>MAISON / PAGES / <span class="red">SERVICE</span></p>
@@ -45,8 +56,8 @@
 
     <main>
         <section class="services-section">
-            <p id="services" class="section__title">Services</p>
-            <h1 id="provide">WHAT WE PROVIDE</h1>
+            <p id="services" class="section__title">Prestations de service</p>
+            <h1 id="provide">CE QUE NOUS FOURNISSONS</h1>
 
             <div class="services">
 
@@ -55,10 +66,11 @@
                         <img src="img/haircut.png" alt="logo">
                     </div>
                     <div class="services-from__text">
-                        <h2>HAIRCUT</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ab quibusdam distinctio
+                        <h2>LA COUPE DE CHEVEUX</h2>
+                        <p>
+                            Tempor erat elitr rebum at clita. Diam dolor diam ipsum assis. Aliqu diam amet diam et eos.
                         </p>
-                        <p id="from">FROM $15</p>
+                        <p id="from">&Agrave; PARTIR DE 15 $</p>
                     </div>
                 </div>
 
@@ -67,10 +79,11 @@
                         <img src="img/beard-trim.png" alt="logo">
                     </div>
                     <div class="services-from__text">
-                        <h2>BEARD TRIM</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ab quibusdam distinctio
+                        <h2>GARNITURE DE BARBE</h2>
+                        <p>
+                            Tempor erat elitr rebum at clita. Diam dolor diam ipsum assis. Aliqu diam amet diam.
                         </p>
-                        <p id="from">FROM $15</p>
+                        <p id="from">&Agrave; PARTIR DE 15 $</p>
                     </div>
                 </div>
 
@@ -79,10 +92,11 @@
                         <img src="img/mans-shave.png" alt="logo">
                     </div>
                     <div class="services-from__text">
-                        <h2>MANS SHAVE</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ab quibusdam distinctio
+                        <h2>RASAGE DE L'HOMME</h2>
+                        <p>
+                            Tempor erat elitr rebum at clita. Diam dolor diam ipsum assis. Aliqu diam amet diam.
                         </p>
-                        <p id="from">FROM $15</p>
+                        <p id="from">&Agrave; PARTIR DE 15 $</p>
                     </div>
                 </div>
 
@@ -92,10 +106,11 @@
                     </div>
                     <div class="services-from__text">
 
-                        <h2>HAIR DYEING</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ab quibusdam distinctio
+                        <h2>TEINTURE DES CHEVEUX</h2>
+                        <p>
+                            Tempor erat elitr rebum at clita. Diam dolor diam ipsum assis. Aliqu diam amet diam.
                         </p>
-                        <p id="from">FROM $15</p>
+                        <p id="from">&Agrave; PARTIR DE 15 $</p>
                     </div>
                 </div>
 
@@ -104,10 +119,11 @@
                         <img src="img/mustache.png" alt="logo">
                     </div>
                     <div class="services-from__text">
-                        <h2>MUSTACHE</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ab quibusdam distinctio
+                        <h2>MOUSTACHE</h2>
+                        <p>
+                            Tempor erat elitr rebum at clita. Diam dolor diam ipsum assis. Aliqu diam amet diam.
                         </p>
-                        <p id="from">FROM $15</p>
+                        <p id="from">&Agrave; PARTIR DE 15 $</p>
                     </div>
                 </div>
 
@@ -116,26 +132,14 @@
                         <img src="img/stacking.png" alt="logo">
                     </div>
                     <div class="services-from__text">
-                        <h2>STACKING</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ab quibusdam distinctio
+                        <h2>EMPILAGE</h2>
+                        <p>
+                            Tempor erat elitr rebum at clita. Diam dolor diam ipsum assis. Aliqu diam amet diam.
                         </p>
-                        <p id="from">FROM $15</p>
+                        <p id="from">&Agrave; PARTIR DE 15 $</p>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="testimonial center">
-            <p class="section__title center">
-                Testimonial
-            </p>
-            <h1 class="center">WHAT OUR CLIENTS SAY</h1>
-            <h3>CLIENT NAME</h3>
-            <p class="red">profession</p>
-            <p>
-                clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo
-                labore sed sed. Magna ut diam sit et amet stet eos sed clita erat
-                magna elitr erat sit sit erat at rebum justo sea clita.
-            </p>
         </section>
 
     </main>
@@ -144,19 +148,21 @@
         <div class="footer-info">
 
             <div class="get-in-touch">
-                <h3>GET IN TOUCH</h3>
+                <h3>ENTRER EN CONTACT</h3>
                 <div class="contact-info">
                     <div class="icon">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                     </div>
-                    <p>123 Street, New York, USA</p>
+                    <p>123 Street, New York, &Eacute;tats-Unis</p>
                 </div>
                 <div class="contact-info">
                     <div class="icon">
                         <i class="fa fa-phone" aria-hidden="true"></i>
                     </div>
                     <p>
-                        +012 345 67890
+                        <a href="tel:+012-345-67890">
+                            +012 345 67890
+                        </a>
                     </p>
                 </div>
                 <div class="contact-info">
@@ -164,25 +170,27 @@
                         <i class="fa fa-envelope-open" aria-hidden="true"></i>
                     </div>
                     <p>
-                        info@example.com
+                        <a href="mailto:info@example.com">
+                            info@example.com
+                        </a>
                     </p>
                 </div>
             </div>
             <div class="quick-links">
-                <h3>QUICK LINKS</h3>
+                <h3>LIENS RAPIDES</h3>
                 <ul>
-                    <li>> About Us</li>
-                    <li>> Contact Us</li>
-                    <li>> Our Services</li>
-                    <li>> Terms & Condition</li>
-                    <li>> Support</li>
+                    <li>> &Agrave; Propos De Nous</li>
+                    <li>> Nous Contacter</li>
+                    <li>> Nos Services</li>
+                    <li>> Termes Et Conditions</li>
+                    <li>> Soutien</li>
                 </ul>
             </div>
             <div class="newsletter">
-                <h3>NEWSLETTER</h3>
+                <h3>BULLETIN</h3>
                 <div class="input">
-                    <input type="text" placeholder="Your email">
-                    <button>SignUp</button>
+                    <input type="text" placeholder="Votre e-mail">
+                    <button>S'inscrire</button>
                 </div>
                 <div class="social__links">
                     <div class="link">
@@ -201,8 +209,8 @@
             </div>
         </div>
         <div class="copyright">
-            <p>&#169; <u>Your site name</u>. All Right Reserved.</p>
-            <p>Designed by <u>HTML Codex</u></p>
+            <p>&#169; Le <u>nom de votre site</u>. tous droits r&eacute;serv&eacute;s.</p>
+            <p>Con&ccedil;u par <u>le codex HTML</u></p>
         </div>
     </footer>
 
